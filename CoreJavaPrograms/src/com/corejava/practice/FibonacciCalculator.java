@@ -5,11 +5,13 @@ import java.util.Scanner;
 public class FibonacciCalculator {
 	public static void main(String args[]) {
 		System.out.println("Enter number upto which Fibonacci series to print: ");
-		int number = new Scanner(System.in).nextInt();
+		Scanner sc = new Scanner(System.in);
+		int number = sc.nextInt();
 		System.out.println("Fibonacci series upto " + number + " numbers : ");
 		for (int i = 1; i <= number; i++) {
 			System.out.print(fibonacci2(i) + " ");
 		}
+		sc.close();
 	}
 
 	public static int fibonacci(int number) {
